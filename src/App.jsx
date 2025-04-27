@@ -1,26 +1,35 @@
-import { useState } from 'react'
-import React from 'react'
-import './App.css'
-import Header from './components/header'
-import Banner from './components/Banner'
-import About from './components/About'
-import Projects from './components/Projects'
-import Expertise from './components/Expertise'
-import Email from './components/Email'
-function App() {
-  
+import React from 'react';
+import './App.css';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import About from './components/About';
+import Projects from './components/Projects';
+import Expertise from './components/Expertise';
+import Email from './components/Email';
+import Footer from './components/Footer';
 
+function App() {
   return (
     <>
-    <Header></Header>
-    <Banner></Banner>
-    <About></About>
-    <Projects></Projects>
-    <Expertise></Expertise>
-    <Email></Email>
-  
+      <Header />
+      <div id="home">
+        <Banner />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="expertise">
+        <Expertise />
+      </div>
+      <div id="contact">
+        <Email />
+      </div>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

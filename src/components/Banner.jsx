@@ -1,77 +1,82 @@
-
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react';
 import Typed from "typed.js";
-import { useRef } from "react";
+import bannerBackground from "../assets/banner_wallpaper.svg";
 
-import bannerBackground from "../assets/banner_wallpaper.svg"
 const Banner = () => {
-  const el=useRef(null);
+  const el = useRef(null);
+
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Software Developer", "Frontend Developer", "Backend Developer"], // Strings to display
-      // Speed settings, try diffrent values untill you get good results
+      strings: ["Software Developer", "Frontend Developer", "Backend Developer"],
       startDelay: 100,
       typeSpeed: 50,
       backSpeed: 20,
       backDelay: 100,
-      loop:true,
+      loop: true,
     });
 
-    // Destropying
     return () => {
       typed.destroy();
     };
   }, []);
+
   return (
     <>
-    <div
-     style={
-      {
-      backgroundImage:`url(${bannerBackground})`,
-      backgroundSize:'cover',
-    
-    }}
-     className='main-continer flex items-center'>
-        <div
-        
-        className=' w-full flex  item-center items-center justify-center  text-white h-full'>
-          
-            <div className='w-2/3 ms-10'>
-             {/* text */}
+      <div
+        style={{
+          backgroundImage: `url(${bannerBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          backgroundAttachment: 'fixed',
+        }}
+        className="main-container flex flex-col md:flex-row items-center justify-center min-h-screen p-6"
+      >
+        {/* Left side: Text */}
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-4">
+          <h3 className="text-2xl md:text-3xl font-semibold text-black md:text-white">
+            Hi, I am
+          </h3>
+          <h1 className="text-4xl md:text-5xl font-bold text-black md:text-white drop-shadow-lg">
+            Lalit Chowhan
+          </h1>
+          <h2 className="text-2xl md:text-3xl text-black md:text-white font-medium">
+            I am <span className="font-semibold text-orange-500" ref={el}></span>
+          </h2>
 
-          <h3 className='  text-3xl font-semibold'>Hi,  I am</h3>
-          <h1 className='  text-5xl font-bold'>Lalit Chowhan</h1>
-          <h2 className='   text-3xl'> I am <span  className='font-bold underline' ref={el}></span> </h2>
+          <p className="mt-3 text-black md:text-white max-w-md mx-auto text-sm md:text-lg leading-relaxed">
+  I am a passionate and dedicated software developer with expertise in both <strong>frontend</strong> and <strong>backend</strong> technologies. I specialize in creating responsive, scalable, and user-centric applications that deliver real value. With a focus on clean code, performance, and seamless user experiences, I am committed to building innovative solutions that make an impact. Whether it's crafting intuitive interfaces or optimizing backend systems, I am always striving to learn, grow, and contribute to meaningful projects.
+</p>
 
-          <p className='mt-3'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex obcaecati exercitationem numquam voluptas provident voluptatum id sint perspiciatis cum, recusandae sequi delectus repellat maiores quam inventore, est tempore sit minus.
-          </p>
-          
-          <div className='icons-container space-x-5'>
-            
-          <i class="fa-brands text-4xl fa-square-github"></i>
-          <i class="fa-brands text-4xl fa-linkedin"></i>
-          <i class="fa-solid  text-4xl fa-envelope"></i>
 
+          {/* Social icons */}
+          <div className="icons-container space-x-5 mt-4 flex justify-center md:justify-start">
+            <a href="https://github.com/Lalit7374?tab=repositories" className="text-3xl md:text-4xl text-black md:text-white hover:text-gray-400 transition">
+              <i className="fa-brands fa-square-github" />
+            </a>
+            <a href="https://linkedin.com/in/lalit-chowhan" className="text-3xl md:text-4xl text-black md:text-white hover:text-gray-400 transition">
+              <i className="fa-brands fa-linkedin" />
+            </a>
+            <a href="#contact" className="text-3xl md:text-4xl text-black md:text-white hover:text-gray-400 transition">
+              <i className="fa-solid fa-envelope" />
+            </a>
           </div>
 
-            <br/>
-          <a  className=' mt-5 px-3 py-2 bg-orange-500 rounded-full shadow' href='/contact'>Contact Me</a>
-          </div>
+          {/* Contact button */}
+          <a
+            href="#contact"  // This links to the contact section on the same page
+            className="mt-5 inline-block px-5 py-2 bg-orange-500 rounded-full shadow-md hover:bg-orange-600 transition"
+          >
+            Contact Me
+          </a>
         </div>
-        <div className='border: w-full flex justify-center'>{/* image */}
 
-        <img  className='rounded-full shadow-lg my-2 w-fit h-90' src="developer.avif"/>
-
+        {/* Right side: Image */}
+        <div className="w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
+          <img className="rounded-full shadow-lg w-48 h-48 md:w-80 md:h-80 object-cover" src="developer.avif" alt="Developer" />
         </div>
-
-
-    </div>
-
-
-
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;
