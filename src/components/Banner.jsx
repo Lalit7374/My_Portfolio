@@ -12,7 +12,7 @@ const Banner = () => {
       // Speed settings, try diffrent values untill you get good results
       startDelay: 100,
       typeSpeed: 50,
-      backSpeed: 10,
+      backSpeed: 20,
       backDelay: 100,
       loop:true,
     });
