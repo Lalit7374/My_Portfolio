@@ -50,7 +50,7 @@ const Banner = () => {
 
           {/* Social icons */}
           <div className="icons-container space-x-5 mt-4 flex justify-center md:justify-start">
-            <a href="https://github.com/Lalit7374?tab=repositories" className="text-3xl md:text-4xl text-black md:text-white hover:text-gray-400 transition">
+            <a href="https://github.com/Lalit7374" className="text-3xl md:text-4xl text-black md:text-white hover:text-gray-400 transition">
               <i className="fa-brands fa-square-github" />
             </a>
             <a href="https://linkedin.com/in/lalit-chowhan" className="text-3xl md:text-4xl text-black md:text-white hover:text-gray-400 transition">
