@@ -5,13 +5,13 @@ const Projects = () => {
               window.open("https://github.com/Lalit7374/Product_Verification_System", "_blank"); // Replace with your GitHub repo URL
             };
             const handleGitHubRedirect1 = () => {
-              window.open("https://github.com/Lalit7374/Ticket_Go", "_blank"); // Replace with your GitHub repo URL
+              window.open("https://github.com/Lalit7374/TaskPilot", "_blank"); // Replace with your GitHub repo URL
             };
             const handleGitHubRedirect2 = () => {
-              window.open("https://github.com/Lalit7374/Break_Remainder", "_blank"); // Replace with your GitHub repo URL
+              window.open("https://github.com/Lalit7374/Customer-Feedback", "_blank"); // Replace with your GitHub repo URL
             };
             const handleGitHubRedirect3 = () => {
-              window.open("https://github.com/Lalit7374?tab=repositories", "_blank"); // Replace with your GitHub repo URL
+              window.open("https://github.com/Lalit7374/Ticket_Go", "_blank"); // Replace with your GitHub repo URL
             };
             
   return (
@@ -35,9 +35,10 @@ const Projects = () => {
 
             <div  className="project-2 cursor-pointer hover:bg-gray-200 bg-slate-100 p-5 text-center shadow-lg rounded-xl space-y-3">
               <i className="fa-solid fa-list-check text-6xl"></i>
-              <h1 className="text-3xl">Expance Tracker</h1>
-              <p>
-  The Expense Tracker is a personal finance tool designed to help users manage their spending. It allows easy tracking of income, expenses, and savings, offering insights into spending habits and budgeting. The application aims to simplify financial management, helping users make informed decisions and stay on top of their financial goals.
+              <h1 className="text-3xl">TaskPilot</h1>
+              <p>TaskPilot is a comprehensive project and team management tool built with the MERN stack.
+It helps organizations streamline projects, assign tasks, track employee attendance, and manage timesheets all in one integrated platform.This project demonstrates end-to-end full-stack development with clean architecture, RESTful APIs, JWT authentication, and modern UI design using Material-UI and Bootstrap 5.
+  
 </p>
 
               <br />
@@ -49,9 +50,9 @@ const Projects = () => {
 
             <div className="project-3 cursor-pointer hover:bg-gray-200 bg-slate-100 p-5 text-center shadow-lg rounded-xl space-y-3">
               <i className="fa-solid fa-user-check text-6xl"></i>
-              <h1 className="text-3xl">Image Recogination</h1>
-              <p>
-  The Image Recognition system leverages machine learning to identify and classify objects in images. It uses advanced algorithms to analyze visual data, enabling real-time recognition of various items or scenes. This tool can be applied to various fields such as security, retail, and healthcare, providing accurate and fast image analysis.
+              <h1 className="text-3xl">Customer Review System</h1>
+              <p>Customer Review System is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).It allows users to share, manage, and view reviews for hotels and services in a secure, user-friendly interface.The project implements JWT authentication, RESTful APIs, and CRUD operations for reviews — showcasing practical experience in end-to-end web application development.
+
 </p>
 
               <br />
@@ -63,9 +64,9 @@ const Projects = () => {
 
             <div className="project-4 cursor-pointer hover:bg-gray-200 bg-slate-100 p-5 text-center shadow-lg rounded-xl space-y-3">
               <i className="fa-solid fa-user-tie text-6xl"></i>
-              <h1 className="text-3xl">Employee Management System</h1>
-              <p>
-  The Employee Management System simplifies the process of managing employee information. It allows organizations to track employee details, attendance, payroll, and performance. This system streamlines administrative tasks, improves data accuracy, and enhances overall efficiency in human resource management.
+              <h1 className="text-3xl">Ticket_Go</h1>
+              <p>Ticket_Go is a ticket booking system designed to allow users to book, cancel, and view tickets. It uses a variety of data structures to manage and optimize ticket operations, including queues for booking, stacks for cancellations, and linked lists to store booking history.This project is built using Django for the backend and Python for data structure management.
+  
 </p>
 
               <button  onClick={handleGitHubRedirect3} className="px-3 py-2 bg-orange-500 text-2xl rounded-full shadow-lg cursor-pointer">
