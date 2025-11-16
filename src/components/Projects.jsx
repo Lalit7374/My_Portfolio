@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
        const handleGitHubRedirect = () => {
-              window.open("https://github.com/Lalit7374/Blockchain_Based_Product_verification_System", "_blank"); // Replace with your GitHub repo URL
+              window.open("https://github.com/Lalit7374/Product_Verification_System", "_blank"); // Replace with your GitHub repo URL
             };
             const handleGitHubRedirect1 = () => {
               window.open("https://github.com/Lalit7374/Ticket_Go", "_blank"); // Replace with your GitHub repo URL
