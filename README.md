@@ -1,6 +1,6 @@
 # 🌐 My Portfolio – Vite + React
 
-🚀 **Live Demo:**  
+🚀 **Live Link:**  
 👉 **[Click Here to View My Portfolio](https://lalit7374.github.io/My_Portfolio/)**  
 
 Welcome to my personal portfolio!  
