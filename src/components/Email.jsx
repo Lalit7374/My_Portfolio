@@ -20,7 +20,7 @@ const Email = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_mv5830c', 'template_ievd2i5', form.current, 'vK3bW9jrVep9Nmpsh')
+    emailjs.sendForm('service_kpuclt5', 'template_fyu9o8d', form.current, 'vK3bW9jrVep9Nmpsh')
       .then((result) => {
         console.log(result.text);
         alert('Thanks for reaching out! 🚀 Your message has been sent.');
